@@ -1,35 +1,34 @@
-function performOperation() {
-    // Get user input from input fields
-    let num1 = parseInt(document.getElementById('input1').value);
-    let num2 = parseInt(document.getElementById('input2').value);
+function performOperations() {
+    // Get user input
+    let num1 = document.getElementById('input1').value;
+    let num2 = document.getElementById('input2').value;   
+
+    // Convert inputs to numbers
+    let number1 = parseFloat(num1);
+    let number2 = parseFloat(num2);
+
     // Check if inputs are valid numbers
-    if (!isNaN(num1) && !isNaN(num2)) {
-        // Perform the operation
-        let result = multiply(num1, num2);
+    if (!isNaN(number1) && !isNaN(number2)) {
+        // Perform arithmetic operations
+        let sum = number1 + number2;
+        let product = number1 * number2;
+        let division = number2 !== 0 ? number1 / number2 : "Cannot divide by zero";
+        debugger;
 
-        // Display the result
-        displayResult(result);
+        // Display results
+        displayResult(sum, product, division);
     } else {
-        displayResult('Please enter valid numbers');
+        displayResult("Invalid input", "Invalid input", "Invalid input");
     }
-    }
+}
 
-            function operation(num1, num2) {
-                // Introduce a debugger statement to pause execution
-                debugger;
-
-                // Multiply the numbers
-                m=num1 * num2;
-                a=num1 + num2;
-                d=num1 / num2;
-                return m,a,d;
-        
-
-            }
-
-            function displayResult(result) {
-                // Display the result in the paragraph element
-                const resultElement = document.getElementById('result');
-                resultElement.textContent = `The result is: ${result}`;
-            }
-        
+function displayResult(sum, product, division) {
+    // Display the result
+    const resultElement = document.getElementById('result');
+    resultElement.innerHTML = `
+        <strong>Results:</strong><br>
+        Addition: ${sum} <br>
+        Multiplication: ${product} <br>
+        Division: ${division}
+    `;
+}
