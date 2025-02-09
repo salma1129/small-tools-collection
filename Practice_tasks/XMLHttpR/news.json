@@ -1,0 +1,19 @@
+{
+    "articles": [
+        {
+            "title": "Tech Industry Booms in 2025",
+            "description": "The tech industry is seeing unprecedented growth in 2025 with innovations in AI and robotics.",
+            "content": "Experts predict that artificial intelligence and automation will drive the next industrial revolution, leading to massive growth in the tech sector."
+        },
+        {
+            "title": "Global Climate Action Strengthens",
+            "description": "Countries worldwide have pledged new commitments to reduce carbon emissions by 2030.",
+            "content": "New agreements between major economies aim to tackle climate change through sustainable energy projects and policy changes."
+        },
+        {
+            "title": "Sports Championships See Record Attendance",
+            "description": "Major sports leagues report record-breaking attendance figures for 2025.",
+            "content": "Fans are flocking to stadiums to support their favorite teams as post-pandemic sports enthusiasm reaches new heights."
+        }
+    ]
+}
